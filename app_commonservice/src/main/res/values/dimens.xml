@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dialog_bg_corners">6dp</dimen>
+    <dimen name="button_container_hight">100dp</dimen>
+    <dimen name="dialog_width">532dp</dimen>
+    <dimen name="dialog_height">414dp</dimen>
+    <dimen name="dialog_height1">331dp</dimen>
+    <dimen name="title_text_size">26sp</dimen>
+    <dimen name="button_container_padding_top">48dp</dimen>
+    <dimen name="title_marginTop">36dp</dimen>
+    <dimen name="progressbar_container_height">36dp</dimen>
+    <dimen name="two_button_width">200dp</dimen>
+
+    <dimen name="remote_brush_paint_width">4.3dp</dimen>
+    <dimen name="remote_layout_width">68dp</dimen>
+    <dimen name="remote_layout_height">68dp</dimen>
+    <dimen name="remote_layout_marginleft">8dp</dimen>
+    <dimen name="remote_title_textsize">20sp</dimen>
+    <dimen name="remote_title_margintop">8dp</dimen>
+    <dimen name="remote_content_margintop">2dp</dimen>
+    <dimen name="remote_content_textsize">16sp</dimen>
+
+
+</resources>

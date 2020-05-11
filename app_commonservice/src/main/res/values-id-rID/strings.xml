@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CommonService</string>
+    <string name="update_title">Pembaruan tersedia untuk meningkatkan Super Remote Control III Anda</string>
+    <string name="update_progress_tips">Remote control tidak tersedia selama peningkatan. Harap letakkan remote control di dekat TV</string>
+    <string name="update_progress_doing">Kemajuan peningkatan %</string>
+    <string name="update_progress_complete">Peningkatan selesai</string>
+    <string name="update_progress_error">Gagal meningkatkan. Tunggu peningkatan selanjutnya</string>
+    <string name="update_btn_now">Tingkatkan sekarang</string>
+    <string name="update_btn_later">Tingkatkan nanti</string>
+<!-- camera update -->
+<string name="camera_update_title">Pembaruan tersedia untuk kamera</string>
+    <string name="camera_update_progress_tips">Meningkatkan kamera...</string>
+    <string name="camera_update_tips">Setelah berhasil meningkatkan, harap putus dan hubungkan ulang kamera</string>
+    <string name="camera_update_complete_tips">Harap putus dan hubungkan ulang kamera</string>
+    <string name="camera_update_progress_tipserro">Kamera terputus dan peningkatan dibatalkan</string>
+
+</resources>

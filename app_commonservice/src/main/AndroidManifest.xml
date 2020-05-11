@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stv.commonservice"
+    android:sharedUserId="android.uid.system">
+
+    <permission
+        android:name="com.stv.commonservice.permission.SEND_PUSH"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.stv.commonservice.permission.SEND_PUSH" />
+    <uses-permission android:name="com.android.pkginstaller.permission.PRIV_INSTALL" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.REBOOT" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.REAL_GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MANAGE_USB" /> <!-- 远程控制用到的权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.pkginstaller.permission.PRIV_INSTALL" />
+    <uses-permission android:name="android.permission.READ_FRAME_BUFFER" />
+    <uses-permission android:name="android.permission.INJECT_EVENTS" /> <!-- 静默安装卸载所需权限 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!-- MQTT所需权限 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <permission
+        android:name="com.stv.commonservice.permission.PUSH_RECEIVER"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.stv.commonservice.permission.PUSH_RECEIVER" />
+
+    <application
+        android:name=".common.AppApplication"
+        android:allowBackup="true"
+        android:directBootAware="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name">
+        <activity
+            android:name=".remoterupdate.activity.UpdateActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".remoterupdate.activity.UpdateProgressActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name=".control.activity.RemoteControlActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service
+            android:name=".common.service.SystemCommonServcice"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.stv.commonservice.action.TEST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 添加自定义action 由电视管家在开机后启动该service，实现app 快速启动 -->
+            <intent-filter>
+                <action android:name="com.stv.commonservice.action.START_SERVICE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".common.receiver.SystemReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.letv.android.str.TV_ACTION_ON" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.accounts.LOGIN_ACCOUNTS_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".common.receiver.AlarmReceiver"
+            android:exported="true"></receiver>
+        <receiver android:name=".common.receiver.TestReceiver"></receiver>
+
+        <provider
+            android:name=".common.provider.CustomProvider"
+            android:authorities="com.stv.activation.provider.customprovider"
+            android:exported="true" /> <!-- push -->
+        <service android:name=".common.service.LetvPushIntentService" /> <!-- 接收推送消息的receiver -->
+        <receiver
+            android:name=".common.receiver.PushMessageReceiver"
+            android:permission="com.stv.stvpush.permission.SEND_PUSH">
+            <intent-filter>
+                <action android:name="com.stv.stvpush.ACTION_RECEIVE_PUSH_MESSAGE" />
+
+                <category android:name="com.stv.commonservice" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".control.service.FloatingWindowService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="startbind.floatingwindowservice" />
+            </intent-filter>
+        </service> <!-- 这个是有效的所以可以打电话 -->
+        <meta-data
+            android:name="PUSH_APP_ID"
+            android:value="id_9450af0ceabd42f59d52ea18c886d480" />
+        <meta-data
+            android:name="PUSH_APP_KEY"
+            android:value="ak_wxaiNZWpxBbDicYJGVQy" /> <!-- Push核心类 -->
+        <service android:name="com.stv.stvpush.service.StvPushService">
+            <intent-filter>
+                <action android:name="com.stv.stvpush.ACTION_SERVICE_PUSH" />
+            </intent-filter>
+        </service>
+        <service android:name="com.stv.videochatsdk.push.LetvPushIntentService" /> <!-- 接收推送消息的receiver -->
+        <receiver android:name="com.stv.videochatsdk.push.WeakMessageReceiver">
+            <intent-filter>
+                <action android:name="com.stv.stvpush.ACTION_RECEIVE_PUSH_MESSAGE" />
+                <!-- category中com.stv.android.videochattv替换为app包名 -->
+                <category android:name="com.stv.commonservice" />
+            </intent-filter>
+        </receiver>
+        <!-- Mqtt Service -->
+        <service
+            android:name="org.eclipse.paho.android.service.MqttService"
+            android:exported="false" />
+    </application>
+
+</manifest>

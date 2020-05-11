@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="@dimen/dialog_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/letv_dialog_drawable"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/progress_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:gravity="center"
+                android:lineSpacingExtra="16dp"
+                android:paddingTop="@dimen/button_container_padding_top"
+                android:text="@string/update_progress_tips"
+                android:textColor="@color/btn_color_bg_focus"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/progress_complete"
+                android:layout_width="fill_parent"
+                android:layout_height="171dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="40dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/ic_complete" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/update_progress_complete"
+                    android:textColor="@color/btn_color_bg_focus"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/progress_doing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/btn_color_bg_press"
+                android:textSize="15sp" />
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="6.66dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="48dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:max="100"
+                android:progressDrawable="@drawable/progress_horizontal" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">module_business</string>
+
+    <string name="module_name">行业定制</string>
+
+    <string name="dialog_title">行业定制</string>
+    <string name="dialog_msg">检查到 Letv 定制化目录，您是否要进行配置？</string>
+    <string name="dialog_y">立即配置</string>
+    <string name="dialog_n">以后再说</string>
+
+    <string name="file_text_copy_success">拷贝成功：%s</string>
+    <string name="file_text_copy_failure">拷贝失败：%s</string>
+    <string name="file_text_check_failure">校验 MD5 失败：%s</string>
+    <string name="file_text_not_support_file">不支持的文件：%s</string>
+    <string name="file_text_setting_animation_success">开机动画设置成功</string>
+    <string name="file_text_setting_animation_failure">开机动画设置失败</string>
+    <string name="file_text_code_err">代码错误</string>
+    <string name="file_text_timeout">处理超时: %s</string>
+    <string name="file_text_not_found_receiver">未适配</string>
+
+    <string name="activity_toast_back_key_disable">正在执行，请稍后……</string>
+
+    <string name="activity_text_ready">准备……</string>
+    <string name="activity_text_start">⚙ 开始……</string>
+    <string name="activity_text_props">⚙ %d/%d 属性：\"%s\" - %s</string>
+    <string name="activity_text_files">⚙ %d/%d 文件: \"%s\"</string>
+    <string name="activity_text_install">⚙ %d/%d 安装：\"%s\" - %s</string>
+    <string name="activity_text_uninstall">⚙ %d/%d 卸载：\"%s\" - %s</string>
+    <string name="activity_text_finish">⚙ 完成，用时 %d 秒！</string>
+    <string name="activity_text_success">成功</string>
+    <string name="activity_text_failure">失败</string>
+</resources>

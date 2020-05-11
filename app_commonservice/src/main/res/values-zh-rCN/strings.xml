@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CommonService</string>
+    <string name="update_title">检测到您的智能遥控器可进行升级优化</string>
+    <string name="update_progress_tips">遥控器升级中暂时不可使用，请将遥控器放在电视旁边</string>
+    <string name="update_progress_doing">正在升级&#160;progress%</string>
+    <string name="update_progress_complete">升级完成</string>
+    <string name="update_progress_error">升级失败，请等待下次升级</string>
+    <string name="update_btn_now">立即升级</string>
+    <string name="update_btn_later">稍后升级</string>
+
+    <!-- camera update -->
+    <string name="camera_update_title">摄像头可进行版本升级</string>
+    <string name="camera_update_progress_tips">摄像头正在升级...</string>
+    <string name="camera_update_tips">升级成功后，请拔掉摄像头重新插入</string>
+    <string name="camera_update_complete_tips">请拔掉摄像头重新插入</string>
+    <string name="camera_update_progress_tipserro">摄像头断开连接，升级终止</string>
+
+</resources>

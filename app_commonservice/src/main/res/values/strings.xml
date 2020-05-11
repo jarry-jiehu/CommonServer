@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CommonService</string>
+    <string name="update_title">New updates available to upgrade your \nSuper Remote Control III </string>
+    <string name="update_progress_tips">The remote control is unavailable during an update. Please put the remote control near the TV set</string>
+    <string name="update_progress_doing">Update progress%</string>
+    <string name="update_progress_complete">Update completed</string>
+    <string name="update_progress_error">Update failed. Please wait for the next available update</string>
+    <string name="update_btn_now">Upgrade now</string>
+    <string name="update_btn_later">Upgrade later</string>
+
+    <!-- camera update -->
+    <string name="camera_update_title">An update is available for upgrading the camera</string>
+    <string name="camera_update_progress_tips">Upgrading the camera...</string>
+    <string name="camera_update_tips">After upgrading successfully, please disconnect and reconnect the camera</string>
+    <string name="camera_update_complete_tips">Please disconnect and reconnect the camera</string>
+    <string name="camera_update_progress_tipserro">Camera has been disconnected and the upgrade is aborted</string>
+
+    <string name="remote_exit_stop">客服协助结束</string>
+    <string name="toast_respone_timeout">对方响应超时</string>
+    <string name="toast_respone_deny">对方拒绝了您的通话请求</string>
+    <string name="toast_respone_dealcall">已被其他设备处理，通话结束</string>
+    <string name="toast_respone_hungup">对方已挂断</string>
+    <string name="toast_respone_busy">对方正忙，请稍后再试</string>
+    <string name="toast_connect_break">连接中断，通话结束</string>
+    <string name="network_exception">网络异常，请检查网络后重试</string>
+    <string name="server_exception">服务器异常，我们正在紧急修复，请稍后重试</string>
+    <string name="remote_accept">接受</string>
+    <string name="remote_deny">拒绝</string>
+    <string name="toast_network_disconnect">网络异常，客服协助中断</string>
+    <string name="remote_brush_exit_message">双击遥控器设置键结束</string>
+    <string name="remote_brush_title">管理员远程协助中&#8230;</string>
+    <string name="request_dialog_message">协助过程中将保证您的隐私安全，您可以随时断开连接</string>
+    <string name="request_dialog_title">客服请求远程协助权限</string>
+    <string name="remote_hint">提示</string>
+    <string name="remote_hint_info">提醒信息</string>
+    <string name="remote_cancel">取消</string>
+
+</resources>

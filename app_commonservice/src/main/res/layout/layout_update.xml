@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="@dimen/dialog_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/letv_dialog_drawable"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="48dp"
+                android:gravity="center"
+                android:text="@string/update_title"
+                android:textColor="@color/btn_color_bg_focus"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_container_hight"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/button_container_padding_top"
+                android:background="@drawable/button_container_bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+                <com.stv.commonservice.library.base.view.CustomButton
+                    android:id="@+id/btn_now"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="@dimen/two_button_width"
+                    android:layout_height="@dimen/letv_dialog_btn_height"
+                    android:background="@drawable/round_bg_button"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="@string/update_btn_now"
+                    android:textColor="@color/white_btn_text_normal"
+                    android:textSize="@dimen/letv_dialog_btn_textSize"
+                    android:textStyle="bold" />
+
+                <com.stv.commonservice.library.base.view.CustomButton
+                    android:id="@+id/btn_later"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="@dimen/two_button_width"
+                    android:layout_height="@dimen/letv_dialog_btn_height"
+                    android:layout_marginLeft="@dimen/letv_dialog_btn_marginLeft"
+                    android:layout_toRightOf="@id/btn_now"
+                    android:background="@drawable/round_bg_button"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:text="@string/update_btn_later"
+                    android:textSize="@dimen/letv_dialog_btn_textSize"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

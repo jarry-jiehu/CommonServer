@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* 
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">"CommonService"</string>
+    <string name="camera_update_complete_tips">"कैमरे को डिस्कनेक्ट करके फिर से कनेक्ट करें"</string>
+    <string name="camera_update_progress_tips">"कैमरा अपग्रेड हो रहा है..."</string>
+    <string name="camera_update_progress_tipserro">"कैमरा डिस्कनेक्ट किया गया और अपग्रेड निरस्त किया गया"</string>
+    <string name="camera_update_tips">"सफलतापूर्वक अपग्रेड करने के बाद, कैमरे को डिस्कनेक्ट करके फिर से कनेक्ट करें."</string>
+    <string name="camera_update_title">"एक कैमरा अपडेट उपलब्ध है "</string>
+    <string name="update_btn_later">"बाद में अपग्रेड करें"</string>
+    <string name="update_btn_now">"अभी अपग्रेड करें"</string>
+    <string name="update_progress_complete">"अपग्रेड पूर्ण"</string>
+    <string name="update_progress_doing">"अपग्रेडिंग प्रगति%"</string>
+    <string name="update_progress_error">"अपग्रेड करने में विफल रहा. अगले उपलब्ध अपग्रेड के लिए प्रतीक्षा करें."</string>
+    <string name="update_progress_tips">"अपग्रेड के दौरान रिमोट कंट्रोल अनुपलब्ध हो जाता है. रिमोट कंट्रोल को TV के निकट रखें."</string>
+    <string name="update_title">"Super रिमोट कंट्रोल अपडेट उपलब्ध है"</string>
+</resources>

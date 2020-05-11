@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Drawable Progress Horizontal -->
+    <dimen name="progressBar_radius">7.5dp</dimen>
+
+    <!-- Drawable Round Button -->
+    <dimen name="round_button_bg_stroke">0dp</dimen>
+    <dimen name="round_button_bg_radius">21dp</dimen>
+    <dimen name="round_button_bg_focus_stroke">0dp</dimen>
+
+    <!-- Drawable Round Model View Backgound -->
+    <dimen name="main_textview_model_stroke">0dp</dimen>
+    <dimen name="main_textview_model_corners">6dp</dimen>
+
+    <!-- Drawable Round Loadding Background -->
+    <dimen name="loadding_bg_stroke">0dp</dimen>
+    <dimen name="loadding_bg_corners">9dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
+
+    <!-- MsgDialog -->
+    <dimen name="letv_dialog_rlayout_width">399dp</dimen>
+    <dimen name="letv_dialog_rlayout_height">150dp</dimen>
+    <dimen name="letv_dialog_rlayout_padingBottom">36dp</dimen>
+    <dimen name="letv_dialog_icon_root_height">56dp</dimen>
+    <dimen name="letv_dialog_icon_root_marginTop">36dp</dimen>
+    <dimen name="letv_dialog_icon_root_marginLeft">30dp</dimen>
+    <dimen name="letv_dialog_icon_width">40dp</dimen>
+    <dimen name="letv_dialog_icon_height">40dp</dimen>
+    <dimen name="letv_dialog_scrollview_width">344dp</dimen> <!-- +32 -->
+    <dimen name="letv_dialog_scrollview_height">56dp</dimen>
+    <dimen name="letv_dialog_scrollview_marginTop">36dp</dimen>
+    <dimen name="letv_dialog_scrollview_marginLeft">15dp</dimen>
+    <dimen name="letv_dialog_tv_content_width">317dp</dimen> <!-- +32 -->
+    <dimen name="letv_dialog_tv_content_height">60dp</dimen>
+    <dimen name="letv_dialog_tv_content_textSize">15sp</dimen>
+    <dimen name="letv_dialog_btn_rlayout_width">399dp</dimen>
+    <dimen name="letv_dialog_btn_rlayout_height">75dp</dimen>
+    <dimen name="letv_dialog_btn_width">150dp</dimen>
+    <dimen name="letv_dialog_btn_height">42dp</dimen>
+    <dimen name="letv_dialog_btn_marginLeft">75sp</dimen>
+    <dimen name="letv_dialog_btn_textSize">19.5sp</dimen>
+
+</resources>

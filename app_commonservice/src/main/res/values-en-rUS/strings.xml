@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CommonService</string>
+    <string name="update_title">A Super remote control update is available</string>
+    <string name="update_progress_tips">The remote control is unavailable during upgrade. Place the remote control near the TV.</string>
+    <string name="update_progress_doing">Upgrading progress%</string>
+    <string name="update_progress_complete">Upgrade complete</string>
+    <string name="update_progress_error">Failed to upgrade. Wait for the next available upgrade.</string>
+    <string name="update_btn_now">Upgrade now</string>
+    <string name="update_btn_later">Upgrade later</string>
+<!-- camera update -->
+<string name="camera_update_title">A camera update is available </string>
+    <string name="camera_update_progress_tips">Upgrading the camera...</string>
+    <string name="camera_update_tips">After upgrading successfully, disconnect and reconnect the camera.</string>
+    <string name="camera_update_complete_tips">Disconnect and reconnect the camera</string>
+    <string name="camera_update_progress_tipserro">The camera was disconnected and upgrade aborted</string>
+
+</resources>

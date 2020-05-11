@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="dialog_bg">#464B50</color>
+    <color name="button_container_bg">#33000000</color>
+
+
+
+    <!-- EUI6.0 -->
+    <color name="btn_color_focus">#FF464B50</color>
+    <color name="btn_color_normal">#7F000000</color>
+    <color name="btn_color_bg_focus">#FFFFFFFF</color>
+    <color name="btn_color_bg_press">#66FFFFFF</color>
+    <color name="btn_color_bg_normal">#26FFFFFF</color>
+    <color name="bg_loadding">#E5000000</color>
+    <color name="white_btn_text_normal">#7FFFFFFF</color>
+
+    <!-- ProgressBar Start... -->
+    <color name="progressBar_bg_solid_color">#1EFFFFFF</color>
+    <color name="progressBar_two_gradient_centerColor">#66FFFFFF</color>
+    <color name="progressBar_two_gradient_endColor">#66FFFFFF</color>
+    <color name="progressBar_two_gradient_startColor">#66FFFFFF</color>
+    <color name="progressBar_one_solid_color">#FFFFFFFF</color>
+    <color name="progressBar_one_gradient_centerColor">#FFFFFFFF</color>
+    <color name="progressBar_one_gradient_endColor">#FFFFFFFF</color>
+    <color name="progressBar_one_gradient_startColor">#FFFFFFFF</color>
+    <!-- ProgressBar End. -->
+    <color name="letv_white">#ffffff</color>
+    <color name="letv_50white">#7fffffff</color>
+    <color name="black_transparent_20">#33000000</color>
+
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* 
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">"CommonService"</string>
+    <string name="camera_update_complete_tips">"Desconecte y vuelva a conectar la cámara"</string>
+    <string name="camera_update_progress_tips">"Actualizando la cámara..."</string>
+    <string name="camera_update_progress_tipserro">"Se desconectó la cámara y se anuló la actualización"</string>
+    <string name="camera_update_tips">"Después de actualizarla exitosamente, desconecte y vuelva a conectar la cámara."</string>
+    <string name="camera_update_title">"Actualización disponible para cámara "</string>
+    <string name="update_btn_later">"Actualizar más tarde"</string>
+    <string name="update_btn_now">"Actualizar ahora"</string>
+    <string name="update_progress_complete">"Actualización finalizada"</string>
+    <string name="update_progress_doing">"Avance de la actualización%"</string>
+    <string name="update_progress_error">"No se pudo actualizar. Espere a que esté disponible la próxima actualización."</string>
+    <string name="update_progress_tips">"El control remoto no se encuentra disponible durante la actualización. Coloque el control remoto cerca de la TV."</string>
+    <string name="update_title">"Hay una actualización disponible para el control remoto Super"</string>
+</resources>

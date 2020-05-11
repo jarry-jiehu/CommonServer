@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+        android:left="100dp"
+        android:right="200dp"
+        android:top="36dp"
+        android:bottom="36dp"
+        android:drawable="@drawable/letv_dialog_shape">
+</inset>

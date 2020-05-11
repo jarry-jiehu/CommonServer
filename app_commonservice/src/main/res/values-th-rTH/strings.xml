@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CommonService</string>
+    <string name="update_title">มีอัปเดตพร้อมสำหรับอัปเกรดซูเปอร์รีโมทคอนโทรล III ของคุณ</string>
+    <string name="update_progress_tips">รีโมทคอนโทรลจะใช้ไม่ได้ระหว่างการอัปเกรด โปรดวางรีโมทคอนโทรลไว้ใกล้กับทีวี </string>
+    <string name="update_progress_doing">สถานะการอัปเกรด %</string>
+    <string name="update_progress_complete">อัปเกรดเลร็จแล้ว</string>
+    <string name="update_progress_error">อัปเกรดไม่สำเร็จ รอการอัปเกรดถัดไป</string>
+    <string name="update_btn_now">อัปเกรดตอนนี้</string>
+    <string name="update_btn_later">อัปเกรดภายหลัง</string>
+<!-- camera update -->
+<string name="camera_update_title">มีอัปเดตพร้อมสำหรับกล้อง</string>
+    <string name="camera_update_progress_tips">กำลังอัปเกรดกล้อง...</string>
+    <string name="camera_update_tips">หลังจากอัปเกรดเสร็จแล้ว โปรดถอดและเชื่อมต่อกล้องอีกครั้ง</string>
+    <string name="camera_update_complete_tips">โปรดถอดและเชื่อมต่อกล้องอีกครั้ง</string>
+    <string name="camera_update_progress_tipserro">กล้องถูกถอดออกและการอัปเกรดถูกยกเลิก</string>
+
+</resources>

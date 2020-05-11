@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* 
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">"CommonService"</string>
+    <string name="camera_update_complete_tips">"Отключите и снова подключите камеру"</string>
+    <string name="camera_update_progress_tips">"Обновление камеры…"</string>
+    <string name="camera_update_progress_tipserro">"Камера отключена, обновление отменено"</string>
+    <string name="camera_update_tips">"После завершения обновления отключите и снова подключите камеру"</string>
+    <string name="camera_update_title">"Доступно обновление для камеры"</string>
+    <string name="update_btn_later">"Обновить позже"</string>
+    <string name="update_btn_now">"Обновить сейчас"</string>
+    <string name="update_progress_complete">"Обновление завершено"</string>
+    <string name="update_progress_doing">"Ход обновления: progress %"</string>
+    <string name="update_progress_error">"Не удалось обновить. Ждите следующего обновления"</string>
+    <string name="update_progress_tips">"Во время обновления пульт дистанционного управления будет недоступен. Расположите пульт рядом с телевизором"</string>
+    <string name="update_title">"Доступно обновление для пульта дистанционного управления Super Remote Control III"</string>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stv.commonservice.module.business">
+
+    <application>
+        <activity
+            android:name=".activity.BusinessUpdateActivity"
+            android:label="@string/module_name"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme" />
+
+        <receiver android:name=".receiver.BusinessReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.letv.android.str.TV_ACTION_ON" />
+                <action android:name="com.letv.android.str.TV_ACTION_OFF" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.stv.commonservice.action.BUSINESS_SHUTDOWN_BY_SDK" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.stv.commonservice.action.BUSINESS_USB" />
+                <action android:name="com.stv.commonservice.action.BUSINESS_ADB" />
+                <action android:name="com.stv.commonservice.action.BUSINESS_BACKGROUND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_REMOVED" />
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
